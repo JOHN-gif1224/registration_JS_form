@@ -2,6 +2,11 @@
 
 <img width="1366" height="768" alt="Capture d’écran (17)" src="https://github.com/user-attachments/assets/744e5523-6d24-4ebe-8273-bd34f733a1d6" />
 
+
+## Live demo :
+  https://john-gif1224.github.io/registration_JS_form/
+
+
 ## Description
 Ce projet est un formulaire d'inscription web avec validation en temps réel en JavaScript. Ce projet a pour but de mettre en pratique les concepts fondamentaux du développement web frontend : HTML pour la structure, CSS pour le design, et JavaScript pour l'interactivité.
 
