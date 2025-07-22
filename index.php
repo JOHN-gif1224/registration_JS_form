@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link rel="stylesheet" href="style.css"> .
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Inscription</h1>
-        <form id="inscriptionForm">
+        <form id="inscriptionForm" action="includes/formhandler_inc.php" method="POST">
             <div class="champForm">
                 <label for="lastName">Nom*</label>
                 <input type="text" id="lastName" name="lastName">
@@ -33,8 +33,8 @@
                 <span class="messageErreur" id="passwordError"></span>
             </div>
             <div class="champForm">
-                <label for="password">Confirmation du mot de passe*</label>
-                <input type="password" id="confirmation" name="password">
+                <label for="confirmation">Confirmation du mot de passe*</label>
+                <input type="password" id="confirmation" name="password_confirmation">
                 <span class="messageErreur" id="confirmationError"></span>
             </div>
             <div class="champForm checkboxPart">
@@ -42,7 +42,7 @@
                 <label for="terms">J'accepte les conditions d'utilisation*</label>
                 <span class="messageErreur" id="conditionsError"></span>
             </div>
-            <button type="submit">S'inscrire</button>
+            <input type="submit" value="submit" name="submit" id="submit">S'inscrire</input>
         </form>
         <div class="validationMessage" id="validationMessage"></div>
     </div>

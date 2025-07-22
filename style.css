@@ -59,7 +59,7 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
-button {
+.submit {
   font-size: large;
   font-weight: 500;
   padding: 12px;
@@ -72,7 +72,7 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+.submit:hover {
   background-color: darkolivegreen;
 }
 
