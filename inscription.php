@@ -1,3 +1,9 @@
+<?php
+require_once "includes/config_session.inc.php";
+require_once "includes/inscrpt_view.inc.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,7 +17,7 @@
 <body>
     <div class="container">
         <h1>Inscription</h1>
-        <form id="inscriptionForm" action="includes/formhandler_inc.php" method="POST">
+        <form id="" action="includes/formhandler_inc.php" method="POST">
             <div class="champForm">
                 <label for="lastName">Nom*</label>
                 <input type="text" id="lastName" name="lastName">
@@ -42,12 +48,17 @@
                 <label for="terms">J'accepte les conditions d'utilisation*</label>
                 <span class="messageErreur" id="conditionsError"></span>
             </div>
-            <input type="submit" value="submit" name="submit" id="submit">S'inscrire</input>
+            <button type="submit" value="submit" name="submit">S'inscrire</button>
+            <?php
+    check_signup_errors();
+    ?>
         </form>
-        <div class="validationMessage" id="validationMessage"></div>
     </div>
 
-    <script src="script.js"></script>
+    
+
+
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>

@@ -75,7 +75,7 @@ document
       validationMessage.style.display = "block";
 
       // Réinitialisation des champs du formulaire
-      document.getElementById("inscriptionForm").reset();
+      // document.getElementById("inscriptionForm").reset();
     }
   });
 

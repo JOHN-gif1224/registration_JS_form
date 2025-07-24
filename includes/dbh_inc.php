@@ -1,11 +1,11 @@
 <?php
 $dbhost = "localhost";
-$dbusername = "postgres";
-$dbname = "binary_sec_connection";
-$dbpassword = "UK2025";
+$dbname = "binary_sec_connexion";
 $dbport = 5432;
+$dbusername = "postgres";
+$dbpassword = "UK2025";
 
-$dsn = "pgsql:host=$dbhost;port=$dbport;dbname=$dbname";
+$dsn = "pgsql:host=$dbhost;dbname=$dbname;port=$dbport";
 
 try {
     $pdo = new PDO($dsn, $dbusername, $dbpassword);
