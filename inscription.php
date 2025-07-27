@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Créer un compte</h1>
-        <form action="traitement_inscription.php" method="post">
+        <form action="includes/traitement_inscription.php" method="post">
             <div class="form-group">
                 <label>Nom:</label>
                 <input type="text" name="nom" required>

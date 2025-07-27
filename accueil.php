@@ -23,7 +23,7 @@ $prenom = $_SESSION['prenom'];
     <div class="container">
         <h1>Bienvenue <br> <?php echo $nom . ' ' . $prenom ?>!</h1>
 
-        <a href="deconnexion.php">Déconnexion</a>
+        <a href="includes/deconnexion.php">Déconnexion</a>
     </div>
 </body>
 

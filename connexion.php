@@ -14,7 +14,7 @@
             <?php unset($_SESSION['erreur']); ?>
         <?php endif; ?>
 
-        <form action="traitement_connexion.php" method="post">
+        <form action="includes/traitement_connexion.php" method="post">
             <div class="form-group">
                 <label>Email:</label>
                 <input type="email" name="email" required>

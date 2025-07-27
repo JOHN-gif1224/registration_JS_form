@@ -7,7 +7,7 @@
 body {
   color: #f5f5f5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url(background5.jpeg);
+  background-image: url(image/background5.jpeg);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: 200vh;

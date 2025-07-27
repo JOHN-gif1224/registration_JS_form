@@ -1,13 +1,6 @@
 <?php
-/*
- * Traitement de la connexion
- * 1. Vérification des identifiants
- * 2. Comparaison du mot de passe haché
- * 3. Création de session
- */
-
 session_start();
-require_once 'config.php';
+require_once 'includes/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = htmlspecialchars($_POST['email']);
