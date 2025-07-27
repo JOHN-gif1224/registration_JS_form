@@ -8,7 +8,7 @@
 
 <body>
     <div class="container">
-        <h2>Créer un compte</h2>
+        <h1>Créer un compte</h1>
         <form action="traitement_inscription.php" method="post">
             <div class="form-group">
                 <label>Nom:</label>
@@ -27,8 +27,13 @@
                 <input type="password" name="mot_de_passe" required>
             </div>
             <div class="form-group">
-                <label>Confirmer le mot de passe:</label>
+                <label>Confirmer le mot de passe: </label>
                 <input type="password" name="confirmation" required>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">J'accepte les conditions d'utilisation</label>
+                <span class="error-message" id="termsError"></span>
             </div>
             <button type="submit">S'inscrire</button>
         </form>

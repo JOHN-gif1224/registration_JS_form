@@ -8,7 +8,7 @@
 
 <body>
     <div class="container">
-        <h2>Connexion</h2>
+        <h1>Connexion</h1>
         <form action="traitement_connexion.php" method="post">
             <div class="form-group">
                 <label>Email:</label>
