@@ -9,6 +9,11 @@
 <body>
     <div class="container">
         <h1>Connexion</h1>
+        <?php if (isset($_SESSION['erreur'])): ?>
+            <div class="erreur"><?= $_SESSION['erreur'] ?></div>
+            <?php unset($_SESSION['erreur']); ?>
+        <?php endif; ?>
+
         <form action="traitement_connexion.php" method="post">
             <div class="form-group">
                 <label>Email:</label>

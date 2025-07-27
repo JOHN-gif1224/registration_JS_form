@@ -79,6 +79,13 @@ button:hover {
 }
 
 .erreur {
-  color: red;
+  color: #d93025;
   margin-bottom: 15px;
+}
+
+.erreur-message {
+  color: #d93025;
+  font-size: 14px;
+  display: block;
+  margin-top: 6px;
 }

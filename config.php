@@ -13,7 +13,7 @@ try {
 
     echo "Connexion réussie à la base de donnée <span style = 'color:blue;'>$dbname</span>";
 } catch (PDOException $e) {
-    echo "Connexion échoué à: <span style = 'color:blue;'>$dbname</span>";
+    echo "Connexion échoué à: <span style = 'color:red;'>$dbname</span>";
     echo "<br>";
     echo $e->getMessage();
 }

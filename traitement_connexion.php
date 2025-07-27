@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($utilisateur && password_verify($mot_de_passe, $utilisateur['mot_de_passe'])) {
             // Création de session
-            $_SESSION['utilisateur_id'] = $utilisateur['id'];
+            $_SESSION['user_id'] = $utilisateur['id'];
             $_SESSION['nom'] = $utilisateur['nom'];
             $_SESSION['prenom'] = $utilisateur['prenom'];
 

@@ -1,6 +1,4 @@
 <?php
-
-
 session_start();
 require_once 'config.php';
 
@@ -15,6 +13,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérification des mots de passe
     if ($mot_de_passe !== $confirmation) {
         $_SESSION['erreur'] = "Les mots de passe ne correspondent pas";
+        header("Location: inscription.php");
+        exit;
+    }
+
+    // Vérification de la longueur du mot de passe
+    if (strlen($mot_de_passe) < 8) {
+        $_SESSION['erreur'] = "Le mot de passe doit contenir au moins 8 caractères";
+        header("Location: inscription.php");
+        exit;
+    }
+
+    // Validation de l'email avec une expression régulière
+    if (!preg_match('/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $email)) {
+        $_SESSION['erreur'] = "L'adresse email n'est pas valide";
         header("Location: inscription.php");
         exit;
     }
